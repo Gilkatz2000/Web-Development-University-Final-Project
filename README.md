@@ -1,2 +1,2 @@
 # Web-Development-University-Final-Project
-https://github.com/Gilkatz2000/Web-Development-University-Final-Project/blob/main/index.html
+https://gilkatz2000.github.io/Web-Development-University-Final-Project/
