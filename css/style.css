@@ -69,11 +69,6 @@ nav {
   transition: all 0.5s ease;
 }
 
-nav.sticky {
-  padding: inherit;
-  background-color: var(--clr-drk);
-}
-
 nav li {
   display: inline-block;
 }
@@ -291,13 +286,6 @@ main {
   line-height: 1.5;
 }
 
-.main-bg-article {
-  background-image: url(../images/SoldierHiding.jpg);
-  background-repeat: no-repeat;
-  background-position: top left;
-  background-size: cover;
-}
-
 .article-title {
   text-align: center;
   min-width: 325px;
@@ -436,48 +424,6 @@ table tbody tr .image {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-}
-
-/* Every Picture was contained in a div and added it as a Background Image */
-#one {
-  background-image: url(../images/ManPlayingGames.jpg);
-}
-
-#two {
-  background-image: url(../images/MarioBrosFlag.jpg);
-}
-#three {
-  background-image: url(../images/BandaiBillboard.jpg);
-}
-#four {
-  background-image: url(../images/Pokeball.jpg);
-}
-#five {
-  background-image: url(../images/BowserCastle.jpg);
-}
-#six {
-  background-image: url(../images/AbandonedHouse.jpg);
-}
-#seven {
-  background-image: url(../images/GameOver.jpg);
-}
-#eight {
-  background-image: url(../images/NukeZone.jpg);
-}
-#nine {
-  background-image: url(../images/SoldierHiding.jpg)
-}
-#ten {
-  background-image: url(../images/RetroVideoGame.jpg);
-}
-#eleven {
-  background-image: url(../images/NintendoVintage.jpg);
-}
-#twelve {
-  background-image: url(../images/font-awesome-icons.png);
-}
-#thirteen {
-  background-image: url(../images/SpaceBackground.jpg);
 }
 
 table tbody tr :last-child a {
