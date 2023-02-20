@@ -1,5 +1,3 @@
-"use strict";
-
 const navBar = document.querySelector("nav");
 const hamburgerMenu = document.querySelector(".hamburger");
 

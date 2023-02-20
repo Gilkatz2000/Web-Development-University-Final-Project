@@ -69,6 +69,11 @@ nav {
   transition: all 0.5s ease;
 }
 
+nav.sticky {
+  padding: inherit;
+  background-color: var(--clr-drk);
+}
+
 nav li {
   display: inline-block;
 }
@@ -269,7 +274,6 @@ nav li {
   transform: scale(1.375);
 }
 
-/* background header background */
 .main-bg {
   position: absolute;
   top: 50%;
@@ -284,6 +288,13 @@ nav li {
 main {
   font-size: 0.75rem;
   line-height: 1.5;
+}
+
+.main-bg-article {
+  background-image: url(../images/SoldierHiding.jpg);
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: cover;
 }
 
 .article-title {
@@ -366,85 +377,10 @@ main {
 }
 /* End Article Page - Mobile */
 
-/* Sources Page - Styling */
-.main-bg-sources {
-  background-image: url(../images/NintendoVintage.jpg);
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: cover;
-  filter: brightness(50%);
-}
-
-.title-sources-page h1 {
-  position: absolute;
-  bottom: 30%;
-  left: 50%;
-  transform: translate(-50%, -30%);
-  color: var(--clr-main);
-  font-size: clamp(3rem, 10vw, 5rem);
-  background-color: var(--clr-lght);
-  padding: 0.75rem;
-  border-radius: 1rem;
-  border: 0.5rem solid var(--clr-main);
-}
-
-table {
-  width: 100%;
-  border-collapse: separate;
-  border-spacing: 0.15rem;
-}
-
-table thead {
-  background-color: var(--clr-main);
-  color: var(--clr-lght);
-}
-
-table thead tr th {
-  font-size: 1.5rem;
-  letter-spacing: 0.125rem;
-  padding: 0.5rem;
-  border: 2px solid var(--clr-drk);
-}
-
-table tbody tr td {
-  font-size: 1.45rem;
-  font-weight: 700;
-  color: var(--clr-drk);
-  text-align: center;
-  padding: 0.75rem 0.25rem;
-  border: 2px solid var(--clr-drk);
-}
-
-table tbody td:first-child {
-  min-width: 300px;
-  height: 250px;
-}
-
-table tbody tr .image {
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-}
-
-table tbody tr :last-child a {
-  text-decoration: none;
-  color: var(--clr-lght);
-  background-color: var(--clr-main);
-  padding: 0.5rem;
-  border-radius: 0.375rem;
-  transition: all 0.25s linear;
-}
-
-table tbody tr :last-child a:hover {
-  background-color: var(--clr-drk);
-}
-
-/* End Sources Page - Styling */
-
 .logo {
   width: var(--logo-wdth);
   height: var(--logo-hgt);
-  transition: all 0.5s ease;
+  transition: all 0.25s ease;
 }
 
 nav .logo:hover {
@@ -698,7 +634,6 @@ article .bottom-section :last-child:hover {
   color: var(--clr-lght);
   text-align: center;
 }
-
 /* End - Footer Styling */
 
 /* Hamburger Menu Icon*/
@@ -748,229 +683,7 @@ article .bottom-section :last-child:hover {
 .hamburger.is-active span {
   background-color: var(--clr-main);
 }
-
 /* End Hamburger Menu Icon*/
-
-
-/* World Cup Bouncing Ball */
-.wrp-soccer-ball {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  position: absolute;
-  margin: auto;
-  left: 51%;
-  bottom: 45rem;
-  transform: translateX(-60%);
-  background-color: white;
-  opacity: 0;
-}
-
-.wrp-soccer-ball h3 {
-  font-size: 3.5rem;
-  color: var(--clr-main);
-}
-
-.ball {
-  color: var(--clr-main);
-  font-size: 8rem;
-  position: absolute;
-  left: 40%;
-  bottom: -11rem;
-  animation: bounce 0.75s infinite ease alternate;
-}
-
-@keyframes bounce {
-  100% {
-    transform: translateY(8rem);
-  }
-}
-/* End World Cup Bouncing Ball */
-
-/* Contact page */
-.main-bg-contact {
-  background-image: url(../images/SpaceBackground.jpg);
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: cover;
-}
-
-#contact-header {
-  min-height: 10vh;
-}
-
-/* Contact Us Page */
-.contact-us {
-  position: relative;
-  margin: auto;
-  margin-top: 2rem;
-  max-width: 550px;
-}
-
-#paperplane,
-#gamepad {
-  color: var(--clr-main);
-  position: absolute;
-}
-
-#paperplane {
-  font-size: 7rem;
-  bottom: -2rem;
-  left: -0.5rem;
-}
-#gamepad {
-  font-size: 4rem;
-  top: -1rem;
-  right: 0;
-  transform: rotate(15deg);
-}
-
-.left-section {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-image: url(../images/RetroVideoGame.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  font-family: var(--ff-hdr);
-  font-size: clamp(1.25rem, 6vw, 2rem);
-  color: var(--clr-lght);
-  height: 8.5rem;
-  border-top-left-radius: 0.5rem;
-  border-top-right-radius: 0.5rem;
-  overflow: hidden;
-}
-
-.left-section::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: #313131ba;
-  z-index: 0;
-}
-
-.left-section h2 {
-  z-index: 1;
-}
-
-.right-section {
-  width: 100%;
-  border-bottom-left-radius: 0.5rem;
-  border-bottom-right-radius: 0.5rem;
-  padding: 0.75rem 0.75rem 2rem;
-  box-shadow: 0.15rem 0.15rem 0.75rem rgba(0, 0, 0, 0.5);
-}
-
-label {
-  position: relative;
-}
-
-label i {
-  position: absolute;
-  z-index: 10;
-  top: 50%;
-  left: 0.5rem;
-  transform: translateY(110%);
-}
-#fname,
-#email,
-#message {
-  display: block;
-  width: 100%;
-  font-family: var(--ff-body);
-  font-size: 1rem;
-  padding: 0.25rem 0.25rem 0.25rem 1.75rem;
-  border-radius: 100vh;
-  border: 1px solid #3131317a;
-  margin-bottom: 1rem;
-  outline-color: var(--clr-main);
-}
-
-#fname:focus,
-#email:focus,
-#message:focus {
-  outline: 1px solid var(--clr-main);
-  border: 1px solid var(--clr-main);
-}
-
-#message {
-  padding: 0.25rem;
-  border-radius: 0.75rem;
-  margin-bottom: 1.5rem;
-  resize: vertical;
-  height: 8rem;
-}
-
-#btn-sbmit {
-  display: block;
-  font-family: var(--ff-body);
-  font-weight: 700;
-  font-size: 1.5rem;
-  letter-spacing: 0.1rem;
-  color: var(--clr-lght);
-  background-color: var(--clr-main);
-  border: none;
-  padding: 0.25rem 0.75rem;
-  border-radius: 0.375rem;
-  margin-left: auto;
-  cursor: pointer;
-  transition: all 0.15s linear;
-}
-
-#btn-sbmit:hover {
-  box-shadow: inset 0 0 0.75rem rgba(0, 0, 0, 0.5);
-}
-/* End Contact Page */
-
-/* Sources Page - Web Articles */
-.wrp-web-articles {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  margin-top: 8rem;
-}
-
-.wrp-web-articles h2,
-.wrp-table h2 {
-  font-family: var(--ff-hdr);
-  font-size: 2rem;
-  color: var(--clr-main);
-  margin-bottom: 2rem;
-}
-
-.wrp-web-articles li span {
-  font-size: 1.25rem;
-}
-
-.wrp-web-articles li {
-  margin-bottom: 2rem;
-}
-.wrp-web-articles a {
-  position: relative;
-  font-size: 1.25rem;
-  font-weight: 700;
-  color: var(--clr-drk);
-  text-decoration: none;
-}
-
-.wrp-web-articles a::before {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 0.25rem;
-  bottom: -0.25rem;
-  background-color: var(--clr-main);
-  transition: all 0.25s linear;
-}
-
-.wrp-web-articles a:hover::before {
-  width: 100%;
-}
-/* End Sources Page - Web Articles */
 
 /* Media Queries */
 @media (min-width: 750px) {
@@ -1106,7 +819,6 @@ label i {
   }
   /* End Main - Article Page */
 
-
   /* Footer */
   footer {
     display: flex;
@@ -1137,61 +849,6 @@ label i {
     font-size: 0.75rem;
   }
   /* End Footer */
-
-  /* Contact Me Page */
-  .contact-us {
-    display: flex;
-    margin-top: 2rem;
-    max-width: 1000px;
-    height: 37rem;
-  }
-
-  #paperplane {
-    font-size: 14rem;
-  }
-  #gamepad {
-    font-size: 6rem;
-    top: -3rem;
-  }
-
-  .left-section {
-    flex: 1;
-    font-size: clamp(1.25rem, 6vw, 2rem);
-    height: 100%;
-    border-radius: 0;
-    border-top-left-radius: 0.75rem;
-    border-bottom-left-radius: 0.75rem;
-  }
-
-  .right-section {
-    flex: 1;
-    display: grid;
-    align-items: center;
-    width: inherit;
-    border-radius: 0;
-    border-top-right-radius: 0.75rem;
-    border-bottom-right-radius: 0.75rem;
-  }
-
-  label i {
-    font-size: 1rem;
-    top: 35%;
-    left: 0.6rem;
-  }
-
-  #fname,
-  #email,
-  #message {
-    font-size: 1.5rem;
-    padding-left: 2.25rem;
-    margin-bottom: 2rem;
-  }
-
-  #message {
-    height: 12rem;
-    padding-left: 0.5rem;
-  }
-  /* End Contact Me Page */
 }
 
 /* Desktop Media Query */
@@ -1240,7 +897,6 @@ label i {
   }
 
   /* Sidebar */
-
   .wrp-logo::before {
     width: 200px;
   }
@@ -1272,71 +928,12 @@ label i {
   .wrp-soccer-ball {
     opacity: 1;
   }
-    /* End Sidebar */
-
+  /* End Sidebar */
 
   /* Article Page - Main */
-  #intro,
+  #intro, 
   .body-content {
     font-size: 1.25rem;
   }
   /* End Article Page - Main */
-
-
-  /* Sources Page - Table */
-  table {
-    max-width: 1200px;
-    margin: auto;
-  }
-}
-
-/* Media Query for Table in Sources Page specifically */
-@media (max-width: 750px) {
-  .table thead {
-    display: none;
-  }
-
-  .table,
-  .table tbody,
-  .table tr,
-  .table td {
-    display: block;
-    width: 100%;
-  }
-  table tbody tr td {
-    margin: 0.25rem 0;
-  }
-  table tbody td:first-child {
-    width: 100%;
-    height: 250px;
-  }
-
-  table tr {
-    margin-bottom: 2rem;
-  }
-
-  table tbody tr td {
-    text-align: right;
-    padding-right: 1rem;
-    padding-left: 50%;
-    position: relative;
-  }
-
-  .table td::before {
-    content: attr(data-label);
-    color: var(--clr-main);
-    position: absolute;
-    left: 0;
-    width: 50%;
-    padding-left: 1rem;
-    font-weight: 700;
-    text-align: left;
-    font-size: 1.25rem;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-
-  td:first-child::before {
-    opacity: 0;
-  }
 }
