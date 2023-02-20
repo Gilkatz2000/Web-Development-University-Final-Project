@@ -290,55 +290,6 @@ main {
   line-height: 1.5;
 }
 
-.main-bg-article {
-  background-image: url(../images/SoldierHiding.jpg);
-  background-repeat: no-repeat;
-  background-position: top left;
-  background-size: cover;
-}
-
-.article-title {
-  text-align: center;
-  min-width: 325px;
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  top: 70%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.article-title h1 {
-  font-size: clamp(1.5rem, 3vw, 2rem);
-  line-height: 1.25;
-}
-
-.article-info-hdr {
-  position: relative;
-  font-family: var(--ff-body);
-  color: var(--clr-lght);
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  margin-top: 1rem;
-}
-
-.article-info-hdr::before {
-  content: "";
-  position: absolute;
-  bottom: -0.125rem;
-  width: 100%;
-  height: 0.125rem;
-  background-color: var(--clr-main);
-}
-
-.article-info-hdr :first-child {
-  font-weight: bold;
-}
-.article-info-hdr :last-child {
-  font-size: 0.65rem;
-}
-
 /* Main Content */
 #intro {
   max-width: 1200px;
@@ -925,9 +876,6 @@ article .bottom-section :last-child:hover {
     flex: none;
   }
 
-  .wrp-soccer-ball {
-    opacity: 1;
-  }
   /* End Sidebar */
 
   /* Article Page - Main */
